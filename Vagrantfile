@@ -77,5 +77,5 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "vagrant_config.sh"
 
   # Replace the target directory path with your own if you have forked this repo
-  config.vm.synced_folder "~/Documents/software-development/ghost-themes/my-website", "/home/vagrant"
+  config.vm.synced_folder "~/Documents/software-development/ghost-themes/my-website", "/home/vagrant/my-website"
 end
