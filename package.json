@@ -6,7 +6,9 @@
   "dependencies": {
     "webpack": "^2.6.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "ghost": "^1.0.0-alpha.21"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
