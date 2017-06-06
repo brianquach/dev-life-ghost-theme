@@ -19,12 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brianquach/my-website.git"
+    "url": "git+https://github.com/brianquach/dev-life-ghost-theme.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brianquach/my-website/issues"
+    "url": "https://github.com/brianquach/dev-life-ghost-theme/issues"
   },
-  "homepage": "https://github.com/brianquach/my-website#readme"
+  "homepage": "https://github.com/brianquach/dev-life-ghost-theme#readme"
 }
