@@ -8,3 +8,5 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 4.2
 nvm alias default 4.2
 nvm use default
+
+npm install -g npm # update npm to latest version
