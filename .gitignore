@@ -1,6 +1,7 @@
 .*
 !.gitignore
 !.babelrc
+!.eslintrc.*
 *~
 *.log
 node_modules
