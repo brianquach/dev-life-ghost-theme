@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "postcss": "^6.0.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
@@ -17,6 +18,9 @@
     "eslint": "^3.19.0",
     "eslint-config-google": "^0.8.0",
     "eslint-loader": "^1.7.1",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-import": "^10.0.0",
+    "postcss-loader": "^2.0.5",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.2",
     "svgo": "^0.7.2",
