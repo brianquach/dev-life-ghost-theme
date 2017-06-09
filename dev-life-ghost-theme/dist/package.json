@@ -1,0 +1,38 @@
+{
+    "name": "dev life",
+    "description": "A Ghost theme tailored for software developers.",
+    "demo": "https://demo.ghost.io",
+    "version": "0.1.0",
+    "engines": {
+        "ghost": ">=0.9.0 <1.0.0"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Brian Quach",
+        "email": "13rianquach@gmail.com",
+        "url": "http://www.bkquach.com"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Personal Blogs",
+            "Web Development",
+            "Portfolio"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "dev",
+        "life",
+        "portfolio",
+        "personal",
+        "web"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/brianquach/dev-life-ghost-theme"
+    },
+    "bugs": "https://github.com/brianquach/dev-life-ghost-theme/issues",
+    "contributors": "https://github.com/brianquach/dev-life-ghost-theme/contributors"
+}
