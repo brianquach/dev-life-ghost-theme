@@ -3,6 +3,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
+  watchOptions: {
+    ignored: /node_modules/,
+    poll: 1000,
+  },
   entry: {
     bundle: './src/assets/js/webpack.js',
   },

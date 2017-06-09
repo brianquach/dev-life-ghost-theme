@@ -28,6 +28,7 @@
   },
   "scripts": {
     "build": "webpack && forever restartall",
+    "watch": "webpack --watch",
     "start": "forever start ./ghost/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
