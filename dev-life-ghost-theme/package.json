@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "postcss": "^6.0.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
@@ -19,6 +15,7 @@
     "eslint-config-google": "^0.8.0",
     "eslint-loader": "^1.7.1",
     "extract-text-webpack-plugin": "^2.1.2",
+    "postcss": "^6.0.1",
     "postcss-cssnext": "^2.11.0",
     "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.5",
