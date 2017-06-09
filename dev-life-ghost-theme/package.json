@@ -27,7 +27,7 @@
     "webpack": "^2.6.1"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack && forever restartall",
     "start": "forever start ./ghost/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

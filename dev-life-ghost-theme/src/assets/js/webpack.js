@@ -2,4 +2,4 @@
 import '../css/screen.css';
 
 // Load default scripts
-import './index.js';
+import './main.js';
