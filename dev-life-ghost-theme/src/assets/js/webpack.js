@@ -1,5 +1,6 @@
 // Load stylesheets
-import '../css/screen.css';
+import '../css/normalize.css';
+import '../css/screen.scss';
 
 // Load default scripts
 import './main.js';
