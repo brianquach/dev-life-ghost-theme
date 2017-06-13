@@ -1,0 +1,3 @@
+vagrant/* linguist-vendored
+ghost/* linguist-vendored 
+shell_scripts/* linguist-vendored 

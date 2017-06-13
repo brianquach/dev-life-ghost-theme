@@ -1,5 +1,6 @@
 .*
 !.gitignore
+!.gitattribute
 !.babelrc
 !.eslintrc.*
 *~
