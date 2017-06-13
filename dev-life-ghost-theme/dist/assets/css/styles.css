@@ -167,8 +167,8 @@ td, th {
     This forces browsers to download the new font file.
 */
 /* ==========================================================================
-   Gernal - General CSS used throughout theme
-   ========================================================================== */
+Gernal - General CSS used throughout theme
+========================================================================== */
 html {
   height: 100%;
   max-height: 100%;
@@ -190,8 +190,12 @@ body {
   background: #D6EDFF; }
 ::selection {
   background: #D6EDFF; }
-h1, h2, h3,
-h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
           font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
   color: #2E2E2E;
@@ -226,18 +230,19 @@ a {
   transition: color 0.3s ease; }
 a:hover {
   color: #111; }
-p, ul, ol, dl {
+p,
+ul,
+ol,
+dl {
   -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
           font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
   margin: 0 0 1.75em 0;
   text-rendering: geometricPrecision; }
-ol, ul {
+ol,
+ul {
+  list-style: none;
   padding-left: 30px;
   padding-left: 3rem; }
-ol ol, ul ul,
-ul ol, ol ul {
-  margin: 0 0 0.4em 0;
-  padding-left: 2em; }
 dl dt {
   float: left;
   width: 180px;
@@ -253,8 +258,6 @@ dl dd {
   margin-bottom: 1em; }
 li {
   margin: 0.4em 0; }
-li li {
-  margin: 0; }
 li > p:last-of-type {
   margin-bottom: 0; }
 hr {
@@ -285,7 +288,7 @@ blockquote cite a {
   font-weight: normal; }
 mark {
   background-color: #fdffb6; }
-code, tt {
+code {
   padding: 1px 3px;
   font-family: Inconsolata, monospace, sans-serif;
   font-size: 0.85em;
@@ -307,7 +310,7 @@ pre {
   overflow: auto;
   background: #F7FAFB;
   border-radius: 3px; }
-pre code, pre tt {
+pre code {
   font-size: inherit;
   white-space: pre-wrap;
   background: transparent;
@@ -357,14 +360,9 @@ table tbody > tr:nth-child(odd) > th {
 table.plain tbody > tr:nth-child(odd) > td,
 table.plain tbody > tr:nth-child(odd) > th {
   background: transparent; }
-iframe, .fluid-width-video-wrapper {
-  display: block;
-  margin: 1.75em 0; }
-/* When a video is inside the fitvids wrapper, drop the
-margin on the iframe, cause it breaks stuff. */
-.fluid-width-video-wrapper iframe {
-  margin: 0; }
-textarea, select, input {
+textarea,
+select,
+input {
   width: 260px;
   padding: 6px 9px;
   margin: 0 0 5px 0;
