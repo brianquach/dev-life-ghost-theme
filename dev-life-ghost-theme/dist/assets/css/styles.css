@@ -442,8 +442,11 @@ Main - CSS for the main content
    Header - CSS for default site header
    ========================================================================== */
 .page-title-wrapper {
-  overflow: hidden;
+  padding: 12px 0;
+  padding: 1.2rem 0;
   background-color: #76A0B0; }
+.page-title-wrapper h1 {
+  margin: 0; }
 /* ==========================================================================
    Navigation - CSS for top level site navigation
    ========================================================================== */
