@@ -447,6 +447,7 @@ Main - CSS for the main content
    Navigation - CSS for top level site navigation
    ========================================================================== */
 .site-navigation {
+  overflow: hidden;
   background-color: #A4B7BB; }
 /* ==========================================================================
    3. Social -
