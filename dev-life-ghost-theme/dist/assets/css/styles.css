@@ -442,13 +442,24 @@ Main - CSS for the main content
    Header - CSS for default site header
    ========================================================================== */
 .page-title-wrapper {
+  overflow: hidden;
   background-color: #76A0B0; }
 /* ==========================================================================
    Navigation - CSS for top level site navigation
    ========================================================================== */
-.site-navigation {
+.site-nav {
   overflow: hidden;
   background-color: #A4B7BB; }
+.site-nav ul {
+  padding: 0; }
+.site-nav li:first {
+  margin-left: 0; }
+.site-nav li:last-child {
+  margin-right: 0; }
+.site-nav li {
+  margin: 5px;
+  margin: .5rem;
+  float: left; }
 /* ==========================================================================
    3. Social -
    ========================================================================== */
