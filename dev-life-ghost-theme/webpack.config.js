@@ -17,7 +17,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(ttf|eot|woff)(\?.*)?$/,
+        test: /\.(ttf|eot|woff|woff2|otf)(\?.*)?$/,
         exclude: /node_modules/,
         use: 'url-loader'
       },
