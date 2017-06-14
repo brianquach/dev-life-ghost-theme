@@ -3,7 +3,7 @@
    ========================================================================== */
 .site-footer {
   padding: 1rem 15px;
-  font-family: "Open Sans", sans-serif;
+  font-family: $label-font;
   font-size: 1rem;
   line-height: 1.75em;
   color: #BBC7CC;
@@ -17,7 +17,7 @@
 }
 
 .site-footer a:hover {
-    border-bottom: #bbc7cc 1px solid;
+    border-bottom: $border-link-color 1px solid;
 }
 
 .poweredby {
