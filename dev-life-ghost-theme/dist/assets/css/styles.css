@@ -424,7 +424,7 @@ Main - CSS for the main content
   min-height: 100%;
   background-color: #FFFBFF; }
 /* ==========================================================================
-  Posts - CSS used to style individual posts
+  Loop - CSS used to style list of posts
   ========================================================================== */
 .posts-wrapper {
   display: -webkit-box;
@@ -435,26 +435,26 @@ Main - CSS for the main content
   padding: 40px 5px;
   padding: 4rem .5rem;
   box-sizing: border-box; }
-.post {
+.post-card {
   border-radius: 3px;
   border: 1px solid #e4e4e4;
   margin: 0 0 20px 20px;
   margin: 0 0 2rem 2rem;
   max-height: 386px;
   box-sizing: border-box; }
-.post-title {
+.post-card-title {
   font-size: 33px;
   font-size: 3.3rem;
   letter-spacing: -1px; }
-.post-title a {
+.post-card-title a {
   text-decoration: none; }
-.post-image {
+.post-card-image {
   width: 100%;
   max-height: 100px; }
-.post-body {
+.post-card-body {
   padding: 10px;
   padding: 1rem; }
-.post-meta {
+.post-card-meta {
   font-size: 12px;
   font-size: 1.2rem;
   margin: 5px 0;
@@ -463,13 +463,13 @@ Main - CSS for the main content
   .posts-wrapper {
     width: 73rem;
     margin: 0 auto; }
-  .post {
+  .post-card {
     width: 35rem;
     margin: 0 0 2rem 2rem;
     max-height: 100%; }
-  .post:nth-child(odd) {
+  .post-card:nth-child(odd) {
     margin-left: 0; } }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .posts-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -478,7 +478,7 @@ Main - CSS for the main content
     width: 100%;
     padding-left: 5rem;
     padding-right: 5rem; }
-  .post {
+  .post-card {
     width: 100%;
     margin: 0 0 2rem 0;
     max-height: 100%; } }
@@ -494,37 +494,139 @@ Main - CSS for the main content
   .posts-wrapper {
     width: 110rem;
     margin: 0 auto; }
-  .post {
+  .post-card {
     width: 35rem;
     margin: 0 0 2rem 2rem;
     max-height: 100%; }
-  .post:nth-child(3n+1) {
+  .post-card:nth-child(3n+1) {
     margin-left: 0; } }
+/* ==========================================================================
+Post - CSS used to style individual posts
+========================================================================== */
+.post {
+  margin: 40px auto;
+  margin: 4rem auto;
+  width: 80%; }
+.post-title {
+  margin-bottom: 10px;
+  margin-bottom: 1rem; }
+.post-meta {
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 0 0 20px 0;
+  margin: 0 0 2rem 0;
+  border-bottom: #e4e4e4 solid 1px; }
+.post-footer {
+  position: relative;
+  margin: 60px 0 0 0;
+  margin: 6rem 0 0 0;
+  padding: 30px 0 0 0;
+  padding: 3rem 0 0 0;
+  border-top: #e4e4e4 1px solid; }
+.post-footer h4 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin: 0; }
+.post-footer p {
+  margin: 10px 0;
+  margin: 1rem 0;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.75em; }
+.author-meta {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1;
+  font-style: italic;
+  color: #9EABB3; }
+.author-meta a {
+  color: #9EABB3; }
+.author-meta a:hover {
+  color: #111; }
+.author-image {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  left: -50px;
+  top: 16px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+  padding: 6px;
+  background: #ffffff;
+  z-index: 2;
+  box-shadow: #e4e4e4 0 0 0 1px; }
+.author-image .img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 100%; }
+.post-footer .author {
+  margin-left: 80px; }
+.post-footer h4 a {
+  color: #2e2e2e;
+  text-decoration: none; }
+.post-footer h4 a:hover {
+  text-decoration: underline; }
+@media (max-width: 500px) {
+  .post {
+    width: 90%; }
+  .post-footer .author {
+    margin-top: 1rem;
+    margin-left: 0; }
+  .author-image {
+    top: -60px;
+    left: 50%;
+    margin-left: -40px; } }
 /* ==========================================================================
    Header - CSS for default site header
    ========================================================================== */
 .page-title-wrapper {
-  padding: 12px 0;
-  padding: 1.2rem 0;
+  padding: 12px 50px;
+  padding: 1.2rem 5rem;
   background-color: #76A0B0; }
 .page-title-wrapper h1 {
   margin: 0; }
+@media (max-width: 768px) {
+  .page-title-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center; } }
 /* ==========================================================================
    Navigation - CSS for top level site navigation
    ========================================================================== */
 .site-nav {
   overflow: hidden;
-  background-color: #A4B7BB; }
+  background-color: #a4b7bb;
+  padding: 0 50px;
+  padding: 0 5rem; }
 .site-nav ul {
-  padding: 0; }
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 .site-nav li:first {
   margin-left: 0; }
 .site-nav li:last-child {
   margin-right: 0; }
 .site-nav li {
   margin: 5px;
-  margin: .5rem;
-  float: left; }
+  margin: .5rem; }
+@media (max-width: 768px) {
+  .sive-nav {
+    padding: 0 1rem; }
+  .site-nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 /* ==========================================================================
    3. Social -
    ========================================================================== */

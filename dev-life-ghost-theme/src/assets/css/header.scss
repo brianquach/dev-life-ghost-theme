@@ -2,10 +2,18 @@
    Header - CSS for default site header
    ========================================================================== */
 .page-title-wrapper {
-  padding: 1.2rem 0;
+  padding: 1.2rem 5rem;
   background-color: #76A0B0;
 }
 
 .page-title-wrapper h1 {
   margin: 0;
+}
+
+@media(max-width: 768px) {
+  .page-title-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
 }
