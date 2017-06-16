@@ -560,8 +560,10 @@ Post - CSS used to style individual posts
     top: -60px;
     left: 50%;
     margin-left: -40px; } }
+.page-template .author-profile,
 .author-template .author-profile {
   text-align: center; }
+.page-template .author-bio,
 .author-template .author-bio {
   font-size: 18px;
   font-size: 1.8rem;
@@ -570,10 +572,15 @@ Post - CSS used to style individual posts
   color: #50585D;
   letter-spacing: 0;
   text-indent: 0; }
+.page-template .author-meta,
 .author-template .author-meta {
   color: #9eabb3; }
+.page-template .author-image,
 .author-template .author-image {
   box-sizing: border-box;
+  position: relative;
+  left: 0;
+  top: 0;
   margin: 40px auto 10px auto;
   margin: 4rem auto 1rem auto;
   width: 200px;
@@ -582,6 +589,7 @@ Post - CSS used to style individual posts
   padding: 6px;
   overflow: hidden;
   box-shadow: #e4e4e4 0 0 0 1px; }
+.page-template .author-title,
 .author-template .author-title {
   margin: 0; }
 .author-image .img {
