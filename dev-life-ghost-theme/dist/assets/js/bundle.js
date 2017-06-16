@@ -80,7 +80,7 @@
 /* 1 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \n@import 'main';\n^\n      File to import not found or unreadable: /home/vagrant/dev-life-ghost-theme/src/assets/css/main.scss.\nParent style sheet: stdin\n      in /home/vagrant/dev-life-ghost-theme/src/assets/css/screen.scss (line 12, column 1)\n    at /home/vagrant/dev-life-ghost-theme/node_modules/webpack/lib/NormalModule.js:192:19\n    at /home/vagrant/dev-life-ghost-theme/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /home/vagrant/dev-life-ghost-theme/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/home/vagrant/dev-life-ghost-theme/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.callback (/home/vagrant/dev-life-ghost-theme/node_modules/sass-loader/lib/loader.js:57:13)\n    at Object.<anonymous> (/home/vagrant/dev-life-ghost-theme/node_modules/sass-loader/node_modules/async/dist/async.js:2243:31)\n    at Object.callback (/home/vagrant/dev-life-ghost-theme/node_modules/sass-loader/node_modules/async/dist/async.js:906:16)\n    at options.error (/home/vagrant/dev-life-ghost-theme/node_modules/node-sass/lib/index.js:294:32)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 2 */
