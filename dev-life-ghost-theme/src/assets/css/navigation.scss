@@ -3,34 +3,53 @@
    ========================================================================== */
 .site-nav {
   overflow: hidden;
-  background-color: #a4b7bb;
-  padding: 0 5rem;
 }
 
 .site-nav ul {
   padding: 0;
-  margin: 0;
+  margin: 1rem 0 0 0;
   display: flex;
-}
-
-.site-nav li:first {
-  margin-left: 0;
-}
-
-.site-nav li:last-child {
-  margin-right: 0;
 }
 
 .site-nav li {
   margin: .5rem;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 #ff6a6a;
+  transition: box-shadow .5s;
+}
+
+.site-nav a {
+  padding: 25px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  background-color: #ff8585;
+  transition: background-color .5s;
+}
+
+.site-nav li:hover {
+  border-color: #ff6a6a;
+  box-shadow: 0 0 0 3px #ff6a6a;
+}
+
+.site-nav .site-nav-current,
+.site-nav a:hover {
+  background-color: #ff6a6a;
+}
+
+.site-nav .site-nav-current {
+  border-color: #ff6a6a;
+}
+
+.site-nav .site-nav-current:after {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
 }
 
 @media(max-width: 768px) {
   .sive-nav {
     padding: 0 1rem;
-  }
-  
-  .site-nav ul {
-    justify-content: center;
   }
 }
