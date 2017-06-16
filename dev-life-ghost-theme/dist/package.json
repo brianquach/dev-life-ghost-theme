@@ -1,7 +1,7 @@
 {
     "name": "dev life",
     "description": "A Ghost theme tailored for software developers.",
-    "demo": "https://demo.ghost.io",
+    "demo": "http://www.bkquach.com",
     "version": "0.1.0",
     "engines": {
         "ghost": ">=0.9.0 <1.0.0"
