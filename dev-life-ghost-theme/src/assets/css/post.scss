@@ -2,40 +2,40 @@
 Post - CSS used to style individual posts
 ========================================================================== */
 
-.post {
+.post-template .post {
   margin: 4rem auto;
   width: 80%;
 }
 
-.post-title {
+.post-template .post-title {
   margin-bottom: 1rem;
 }
 
-.post-meta {
+.post-template .post-meta {
   font-size: 1.4rem;
   margin: 0 0 2rem 0;
   border-bottom: $border-color solid 1px;
 }
 
-.post-footer {
+.post-template .post-footer {
   position: relative;
   margin: 6rem 0 0 0;
   padding: 3rem 0 0 0;
   border-top: $border-color 1px solid;
 }
 
-.post-footer h4 {
+.post-template .post-footer h4 {
   font-size: 1.8rem;
   margin: 0;
 }
 
-.post-footer p {
+.post-template .post-footer p {
   margin: 1rem 0;
   font-size: 1.4rem;
   line-height: 1.75em;
 }
 
-.author-meta {
+.post-template .author-meta {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -45,15 +45,15 @@ Post - CSS used to style individual posts
   color: #9EABB3;
 }
 
-.author-meta a {
+.post-template .author-meta a {
   color: #9EABB3;
 }
 
-.author-meta a:hover {
+.post-template .author-meta a:hover {
   color: #111;
 }
 
-.author-image {
+.post-template .author-image {
   box-sizing: border-box;
   display: block;
   position: absolute;
@@ -69,7 +69,7 @@ Post - CSS used to style individual posts
   box-shadow: $border-color 0 0 0 1px;
 }
 
-.author-image .img {
+.post-template .author-image .img {
   position: relative;
   display: block;
   width: 100%;
@@ -79,25 +79,25 @@ Post - CSS used to style individual posts
   border-radius: 100%;
 }
 
-.post-footer .author {
+.post-template .author {
   margin-left: 80px;
 }
 
-.post-footer h4 a {
+.post-template .post-footer h4 a {
   color: #2e2e2e;
   text-decoration: none;
 }
 
-.post-footer h4 a:hover {
+.post-template .post-footer h4 a:hover {
   text-decoration: underline;
 }
 
 @media(max-width: 500px) {
-  .post {
+  .post-template .post {
     width: 90%;
   }
 
-  .post-footer .author {
+  .post-template .author {
     margin-top: 1rem;
     margin-left: 0;
   }
