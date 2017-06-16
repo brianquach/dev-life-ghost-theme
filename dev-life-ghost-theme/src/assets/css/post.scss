@@ -2,11 +2,6 @@
 Post - CSS used to style individual posts
 ========================================================================== */
 
-.post-template .post {
-  margin: 4rem auto;
-  width: 80%;
-}
-
 .post-template .post-title {
   margin-bottom: 1rem;
 }
@@ -42,15 +37,15 @@ Post - CSS used to style individual posts
   font-size: 1.4rem;
   line-height: 1;
   font-style: italic;
-  color: #9EABB3;
+  color: $author-meta-data-color;
 }
 
 .post-template .author-meta a {
-  color: #9EABB3;
+  color: $author-meta-data-color;
 }
 
 .post-template .author-meta a:hover {
-  color: #111;
+  color: $meta-link-hover-color;
 }
 
 .post-template .author-image {
@@ -64,19 +59,8 @@ Post - CSS used to style individual posts
   border-radius: 100%;
   overflow: hidden;
   padding: 6px;
-  background: #ffffff;
   z-index: 2;
   box-shadow: $border-color 0 0 0 1px;
-}
-
-.post-template .author-image .img {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  border-radius: 100%;
 }
 
 .post-template .author {
@@ -84,7 +68,6 @@ Post - CSS used to style individual posts
 }
 
 .post-template .post-footer h4 a {
-  color: #2e2e2e;
   text-decoration: none;
 }
 
@@ -93,10 +76,6 @@ Post - CSS used to style individual posts
 }
 
 @media(max-width: 500px) {
-  .post-template .post {
-    width: 90%;
-  }
-
   .post-template .author {
     margin-top: 1rem;
     margin-left: 0;

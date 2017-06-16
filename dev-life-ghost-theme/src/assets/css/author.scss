@@ -1,0 +1,41 @@
+.author-template .author-profile {
+  text-align: center;
+}
+
+.author-template .author-bio {
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  font-weight: 200;
+  color: #50585D;
+  letter-spacing: 0;
+  text-indent: 0;
+}
+
+.author-template .author-meta {
+  color: $author-meta-data-color;
+}
+
+.author-template .author-image {
+  box-sizing: border-box;
+  margin: 4rem auto 1rem auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  padding: 6px;
+  overflow: hidden;
+  box-shadow: $border-color 0 0 0 1px;
+}
+
+.author-template .author-title {
+  margin: 0;
+}
+
+.author-image .img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 100%;
+}

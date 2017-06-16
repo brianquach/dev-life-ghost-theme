@@ -302,9 +302,20 @@ button {
   background: #5ba4e5;
 }
 
+main {
+  margin: 4rem auto;
+  width: 80%;
+}
+
 .site-wrapper {
     position: relative;
     z-index: 10;
     min-height: 100%;
     background-color: #FFFBFF;
+}
+
+@media(max-width: 500px) {
+  main {
+    width: 90%;
+  }
 }

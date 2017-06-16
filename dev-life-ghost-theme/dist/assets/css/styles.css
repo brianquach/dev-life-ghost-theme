@@ -145,6 +145,10 @@ td, th {
   content: "\F02C"; }
 .icon-calendar:before {
   content: "\F073"; }
+.icon-github:before {
+  content: "\F09B"; }
+.icon-bar-chart:before {
+  content: "\F080"; }
 /* ==========================================================================
   General - General CSS used throughout theme
   ========================================================================== */
@@ -392,11 +396,18 @@ button {
   border-radius: 0.3rem;
   border: rgba(0, 0, 0, .05) 0.1em solid;
   background: #5ba4e5; }
+main {
+  margin: 40px auto;
+  margin: 4rem auto;
+  width: 80%; }
 .site-wrapper {
   position: relative;
   z-index: 10;
   min-height: 100%;
   background-color: #FFFBFF; }
+@media (max-width: 500px) {
+  main {
+    width: 90%; } }
 /* ==========================================================================
    3. Utilities - Reusable CSS modifiers
    ========================================================================== */
@@ -457,9 +468,6 @@ button {
   margin: 5px 0;
   margin: .5rem 0; }
 @media (max-width: 1099px) {
-  .posts-wrapper {
-    width: 73rem;
-    margin: 0 auto; }
   .post-card {
     width: 35rem;
     margin: 0 0 2rem 2rem;
@@ -471,26 +479,12 @@ button {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    padding-left: 5rem;
-    padding-right: 5rem; }
+            flex-direction: column; }
   .post-card {
     width: 100%;
     margin: 0 0 2rem 0;
     max-height: 100%; } }
-@media (max-width: 450px) {
-  .posts-wrapper {
-    padding-left: 2rem;
-    padding-right: 2rem; } }
-@media (max-width: 375px) {
-  .posts-wrapper {
-    padding-left: 1.2rem;
-    padding-right: 1.2rem; } }
 @media (min-width: 1100px) {
-  .posts-wrapper {
-    width: 110rem;
-    margin: 0 auto; }
   .post-card {
     width: 35rem;
     margin: 0 0 2rem 2rem;
@@ -500,10 +494,6 @@ button {
 /* ==========================================================================
 Post - CSS used to style individual posts
 ========================================================================== */
-.post-template .post {
-  margin: 40px auto;
-  margin: 4rem auto;
-  width: 80%; }
 .post-template .post-title {
   margin-bottom: 10px;
   margin-bottom: 1rem; }
@@ -538,11 +528,11 @@ Post - CSS used to style individual posts
   font-size: 1.4rem;
   line-height: 1;
   font-style: italic;
-  color: #9EABB3; }
+  color: #9eabb3; }
 .post-template .author-meta a {
-  color: #9EABB3; }
+  color: #9eabb3; }
 .post-template .author-meta a:hover {
-  color: #111; }
+  color: #111111; }
 .post-template .author-image {
   box-sizing: border-box;
   display: block;
@@ -554,27 +544,15 @@ Post - CSS used to style individual posts
   border-radius: 100%;
   overflow: hidden;
   padding: 6px;
-  background: #ffffff;
   z-index: 2;
   box-shadow: #e4e4e4 0 0 0 1px; }
-.post-template .author-image .img {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  border-radius: 100%; }
 .post-template .author {
   margin-left: 80px; }
 .post-template .post-footer h4 a {
-  color: #2e2e2e;
   text-decoration: none; }
 .post-template .post-footer h4 a:hover {
   text-decoration: underline; }
 @media (max-width: 500px) {
-  .post-template .post {
-    width: 90%; }
   .post-template .author {
     margin-top: 1rem;
     margin-left: 0; }
@@ -582,6 +560,38 @@ Post - CSS used to style individual posts
     top: -60px;
     left: 50%;
     margin-left: -40px; } }
+.author-template .author-profile {
+  text-align: center; }
+.author-template .author-bio {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  font-weight: 200;
+  color: #50585D;
+  letter-spacing: 0;
+  text-indent: 0; }
+.author-template .author-meta {
+  color: #9eabb3; }
+.author-template .author-image {
+  box-sizing: border-box;
+  margin: 40px auto 10px auto;
+  margin: 4rem auto 1rem auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  padding: 6px;
+  overflow: hidden;
+  box-shadow: #e4e4e4 0 0 0 1px; }
+.author-template .author-title {
+  margin: 0; }
+.author-image .img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 100%; }
 /* ==========================================================================
    Header - CSS for default site header
    ========================================================================== */
