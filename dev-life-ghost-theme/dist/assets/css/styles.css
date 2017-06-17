@@ -216,7 +216,7 @@ h6 {
   font-size: 20px;
   font-size: 2rem; }
 a {
-  color: #4A4A4A;
+  color: #4a4a4a;
   transition: color 0.3s ease; }
 a:hover {
   color: #111; }
@@ -301,10 +301,6 @@ kbd {
   background: #f4f4f4;
   border-radius: 4px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, .2), 0 1px 0 0 #ffffff inset; }
-main {
-  margin: 40px auto;
-  margin: 4rem auto;
-  width: 80%; }
 .site-wrapper {
   position: relative;
   min-height: 100%;
@@ -314,7 +310,8 @@ main {
   margin: 40px 0;
   margin: 4rem 0; }
 .pagination .page-number {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #4a4a4a; }
 .pagination a {
   position: relative;
   padding: 5px 15px;
@@ -347,6 +344,14 @@ main {
 .pagination .newer-posts:hover:before {
   -webkit-transform: translateX(-0.3rem);
           transform: translateX(-0.3rem); }
+.main-header {
+  text-align: center;
+  margin: 0 0 10px 0;
+  margin: 0 0 1rem 0; }
+.main-header h3 {
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 100; }
 @media (max-width: 500px) {
   main {
     width: 90%; } }
@@ -370,9 +375,6 @@ main {
   width: 80%;
   max-width: 710px;
   margin: 0 auto; }
-.vertical {
-  display: table-cell;
-  vertical-align: middle; }
 /* ==========================================================================
   Loop - CSS used to style list of posts
   ========================================================================== */
