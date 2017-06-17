@@ -352,9 +352,6 @@ kbd {
   font-size: 20px;
   font-size: 2rem;
   font-weight: 100; }
-@media (max-width: 500px) {
-  main {
-    width: 90%; } }
 /* ==========================================================================
    3. Utilities - Reusable CSS modifiers
    ========================================================================== */
@@ -373,8 +370,13 @@ kbd {
 .inner {
   position: relative;
   width: 80%;
-  max-width: 710px;
-  margin: 0 auto; }
+  margin: 40px auto;
+  margin: 4rem auto;
+  margin: 0 auto;
+  max-width: 710px; }
+@media (max-width: 500px) {
+  .inner {
+    width: 90%; } }
 /* ==========================================================================
   Loop - CSS used to style list of posts
   ========================================================================== */
@@ -542,10 +544,8 @@ Post - CSS used to style individual posts
    Header - CSS for default site header
    ========================================================================== */
 .page-intro-content {
-  width: 80%;
-  margin: 0 auto;
-  padding: 40px 0;
-  padding: 4rem 0; }
+  height: 300px;
+  position: relative; }
 .page-header {
   position: relative; }
 .page-header-design {
@@ -557,9 +557,6 @@ Post - CSS used to style individual posts
   height: 100%;
   position: absolute;
   background: linear-gradient(45deg, #357adb 0%, #72ead2 49%, #ad5ab6 90%); }
-.page-intro {
-  height: 300px;
-  position: relative; }
 .page-title-wrapper h1 {
   margin: 0; }
 @media (max-width: 768px) {
