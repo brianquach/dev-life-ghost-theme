@@ -6,9 +6,9 @@ export NVM_DIR="$HOME/.nvm"
 rm -rf ~/bq-theme/ghost # remove existing ghost directory
 
 cd ~
-wget https://ghost.org/zip/ghost-latest.zip
-sudo unzip -uo ghost-latest.zip -d ~/bq-theme/ghost
-rm -rf ghost-latest.zip # clean up
+wget https://github.com/TryGhost/Ghost/releases/download/0.11.9/Ghost-0.11.9.zip
+unzip -uo Ghost-0.11.9.zip -d ~/bq-theme/ghost
+rm -rf Ghost-0.11.9.zip.zip # clean up
 
 cd ~/bq-theme/ghost && sudo npm install --production
 
