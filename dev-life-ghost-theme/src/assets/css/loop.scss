@@ -15,6 +15,13 @@
   max-height: 386px;
   box-sizing: border-box;
   width: 100%;
+  background-color: #fcfcfc;
+  box-shadow: 10px 10px 30px -10px #333;
+  transition: box-shadow .2s linear;
+}
+
+.post-card:hover {
+  box-shadow: 2px 2px 30px -10px #333;
 }
 
 .post-card-title {

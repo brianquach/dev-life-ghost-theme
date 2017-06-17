@@ -409,9 +409,8 @@ main {
   width: 80%; }
 .site-wrapper {
   position: relative;
-  z-index: 10;
   min-height: 100%;
-  background-color: #FFFBFF; }
+  background-color: #fafafa; }
 @media (max-width: 500px) {
   main {
     width: 90%; } }
@@ -455,7 +454,12 @@ main {
   margin: 0 0 2rem 2rem;
   max-height: 386px;
   box-sizing: border-box;
-  width: 100%; }
+  width: 100%;
+  background-color: #fcfcfc;
+  box-shadow: 10px 10px 30px -10px #333;
+  transition: box-shadow .2s linear; }
+.post-card:hover {
+  box-shadow: 2px 2px 30px -10px #333; }
 .post-card-title {
   font-size: 33px;
   font-size: 3.3rem;
