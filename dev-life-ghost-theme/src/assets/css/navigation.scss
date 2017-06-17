@@ -16,7 +16,7 @@
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 0 0 0 #ff6a6a;
+  box-shadow: 0 0 0 0 ;
   transition: box-shadow .5s;
 }
 
@@ -29,13 +29,13 @@
 }
 
 .site-nav li:hover {
-  border-color: #ff6a6a;
+  border-color: $anchor-btn-passive-color;
   box-shadow: 0 0 0 3px #ff6a6a;
 }
 
 .site-nav .site-nav-current,
 .site-nav a:hover {
-  background-color: #ff6a6a;
+  background-color: $anchor-btn-active-color;
 }
 
 .site-nav .site-nav-current {
