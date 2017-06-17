@@ -1,50 +1,62 @@
 /* ==========================================================================
-   Icons - Sets up the icon font and respective classes
-   ========================================================================== */
+Icons - Sets up the icon font and respective classes
+========================================================================== */
 
 /*
-   IMPORTANT: When making any changes to the icon font, be sure to increment
-   the version number by 1 in the @font-face rule. `?v=1` becomes `?v=2`
-   This forces browsers to download the new font file.
+IMPORTANT: When making any changes to the icon font, be sure to increment
+the version number by 1 in the @font-face rule. `?v=1` becomes `?v=2`
+This forces browsers to download the new font file.
 */
 
 @font-face {
   font-family: "fontawesome";
   src:url("../fonts/fontawesome-webfont.eot?v=1");
   src:url("../fonts/fontawesome-webfont.eot?v=1#iefix") format("embedded-opentype"),
-    url("../fonts/fontawesome-webfont.woff?v=1") format("woff"),
-    url("../fonts/fontawesome-webfont.woff2?v=1") format("woff2"),
-    url("../fonts/fontawesome-webfont.ttf?v=1") format("truetype"),
-    url("../fonts/fontawesome-webfont.svg?v=1#fontawesome-webfont") format("svg"),
-    url("../fonts/FontAwesome.otf?v=1") format("otf");
+  url("../fonts/fontawesome-webfont.woff?v=1") format("woff"),
+  url("../fonts/fontawesome-webfont.woff2?v=1") format("woff2"),
+  url("../fonts/fontawesome-webfont.ttf?v=1") format("truetype"),
+  url("../fonts/fontawesome-webfont.svg?v=1#fontawesome-webfont") format("svg"),
+  url("../fonts/FontAwesome.otf?v=1") format("otf");
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-    font-family: "fontawesome", "Open Sans", sans-serif;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    text-decoration: none !important;
+  font-family: "fontawesome", "Open Sans", sans-serif;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  text-decoration: none !important;
 }
 
 .icon-tags:before {
-    content: "\f02c";
+  content: "\f02c";
 }
 
 .icon-calendar:before {
-    content: "\f073";
+  content: "\f073";
 }
 
 .icon-github:before {
-    content: "\f09b";
+  content: "\f09b";
+}
+
+.icon-linkedin:before {
+  content: "\f08c";
+}
+
+.icon-envelope:before {
+  content: "\f003";
+}
+
+.icon-stackoverflow:before {
+  content: "\f16c";
 }
 
 .icon-bar-chart:before {
-    content: "\f080";
+  content: "\f080";
 }

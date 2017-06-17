@@ -1,7 +1,43 @@
 /* ==========================================================================
    3. Social -
    ========================================================================== */
+$social-background-color: #34495e;
+$text-color: #fff;
+
 .site-social {
-  background-color: #35262D;
-  height: 200px;
+  background-color: $social-background-color;
+  padding: 4rem;
+}
+
+.site-social h2 {
+  text-align: center;
+  color: $text-color;
+}
+
+.site-social ul {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+
+.site-social li {
+  margin: 0 2rem;
+}
+
+.site-social a {
+  border: 2px solid $text-color;
+  border-radius: .5rem;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 5rem;
+  color: #eeeeee;
+  display: block;
+  width: 100px;
+  text-align: center;
+  transition: color .5s, background-color .5s;
+}
+
+.site-social a:hover {
+  color: $social-background-color;
+  background-color: $text-color;
 }
