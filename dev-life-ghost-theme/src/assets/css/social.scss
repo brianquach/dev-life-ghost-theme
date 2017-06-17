@@ -6,7 +6,7 @@ $text-color: #fff;
 
 .site-social {
   background-color: $social-background-color;
-  padding: 4rem;
+  padding: 4rem 0 2rem 0;
 }
 
 .site-social h2 {
@@ -18,10 +18,11 @@ $text-color: #fff;
   display: flex;
   margin: 0;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .site-social li {
-  margin: 0 2rem;
+  margin: 0 2rem 2rem 2rem;
 }
 
 .site-social a {

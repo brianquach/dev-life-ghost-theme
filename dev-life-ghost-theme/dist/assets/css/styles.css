@@ -544,7 +544,7 @@ Post - CSS used to style individual posts
    Header - CSS for default site header
    ========================================================================== */
 .page-intro-content {
-  height: 300px;
+  height: 250px;
   position: relative; }
 .page-header {
   position: relative; }
@@ -610,8 +610,8 @@ Post - CSS used to style individual posts
    ========================================================================== */
 .site-social {
   background-color: #34495e;
-  padding: 40px;
-  padding: 4rem; }
+  padding: 40px 0 20px 0;
+  padding: 4rem 0 2rem 0; }
 .site-social h2 {
   text-align: center;
   color: #fff; }
@@ -622,10 +622,12 @@ Post - CSS used to style individual posts
   margin: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 .site-social li {
-  margin: 0 20px;
-  margin: 0 2rem; }
+  margin: 0 20px 20px 20px;
+  margin: 0 2rem 2rem 2rem; }
 .site-social a {
   border: 2px solid #fff;
   border-radius: .5rem;
