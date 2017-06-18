@@ -5,15 +5,13 @@
 .posts-wrapper {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
 }
 
 .post-card {
   border-radius: 3px;
-  border: 1px solid $border-color;
+  overflow: hidden;
   margin: 0 0 2rem 2rem;
-  max-height: 386px;
-  box-sizing: border-box;
+
   width: 100%;
   background-color: #fcfcfc;
   box-shadow: 10px 10px 30px -10px #333;
@@ -24,27 +22,72 @@
   box-shadow: 2px 2px 30px -10px #333;
 }
 
+.post-card:hover a {
+  text-decoration: underline;
+}
+
+.post-card:hover .post-card-meta {
+  background-color: $anchor-btn-passive-color;
+}
+
+.post-card:hover .read-more {
+  text-decoration: none;
+  border-color: $anchor-btn-passive-color;
+  background-color: $anchor-btn-passive-color;
+}
+
+.post-card .content {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
 .post-card-title {
   font-size: 3.3rem;
   letter-spacing: -1px;
+  margin: 0;
+}
+
+.post-card-header {
+  margin-top: 1rem;
 }
 
 .post-card-title a {
   text-decoration: none;
 }
 
-.post-card-image {
-  width: 100%;
-  max-height: 100px;
+.post-card-excerpt p {
+  margin: 0;
 }
 
-.post-card-body {
-  padding: 1rem;
+.post-card .read-more {
+  text-align: center;
+  width: 10rem;
+  padding: .5rem;
+  border-radius: 5px;
+  border: 2px solid $border-color;
+  text-decoration: none;
+  transition: border-color .2s linear, background-color .2s linear;
+}
+
+.post-card .read-more:hover {
+  border-color: $anchor-btn-active-color;
+  background-color: $anchor-btn-active-color;
+}
+
+.post-card-image {
+  height: 150px;
+  background-position: center;
+  background-size: cover;
 }
 
 .post-card-meta {
   font-size: 1.2rem;
-  margin: .5rem 0;
+  background: #e6e6e6;
+  transition: background-color .2s linear;
+}
+
+.post-card footer {
+  padding: .5rem;
 }
 
 @media(max-width: 768px) {
@@ -54,7 +97,6 @@
 
   .post-card {
     margin: 0 0 2rem 0;
-    max-height: 100%;
   }
 }
 
@@ -62,6 +104,5 @@
   .post-card {
     width: 35rem;
     margin: 0 0 2rem 2rem;
-    max-height: 100%;
   }
 }

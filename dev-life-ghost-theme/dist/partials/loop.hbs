@@ -2,33 +2,31 @@
   {{!-- This is the post loop - each post will be output using this markup --}}
   {{#foreach posts}}
   <article class="{{post_class}} post-card">
+    <section class="post-card-meta content">
+      <time class="post-card-date icon-calendar" datetime="{{date format="YYYY-MM-DD"}}">
+        {{date format="DD MMMM YYYY"}}
+      </time>
+      &nbsp;{{tags prefix='<i class="icon-tags"></i> ' limit="1"}}
+    </section>
+
     {{#if image}}
-    <section>
-      <img src={{image}} class="post-card-image" alt="{{title}}'s post cover image" />
-    </section>
+    <div class="post-card-image" style="background-image: url({{image}})">
+    </div>
     {{/if}}
-    <section class="post-card-body">
-      <header class="post-card-header">
-        <h2 class="post-card-title">
-          <a href="{{url}}">{{title}}</a>
-        </h2>
-      </header>
-      <section class="post-card-meta">
-        <time class="post-card-date icon-calendar" datetime="{{date format="YYYY-MM-DD"}}">
-          {{date format="DD MMMM YYYY"}}
-        </time>
-      </section>
-      <section class="post-card-excerpt">
-        <p>
-          {{excerpt words="26"}}<a class="read-more" href="{{url}}">&hellip;</a>
-          <br>
-          <a class="read-more" href="{{url}}">Read More</a>
-        </p>
-      </section>
-      <footer class="post-card-meta">
-        {{tags prefix='<i class="icon-tags"></i> '}}
-      </footer>
+
+    <header class="post-card-header content">
+      <h2 class="post-card-title">
+        <a href="{{url}}">{{title}}</a>
+      </h2>
+    </header>
+    <section class="post-card-excerpt content">
+      <p>
+        {{excerpt words="26"}}<a href="{{url}}">&hellip;</a>
+      </p>
     </section>
+    <footer class="content">
+      <a class="read-more" href="{{url}}">Read More</a>
+    </footer>
   </article>
   {{/foreach}}
 </div>
