@@ -352,6 +352,10 @@ kbd {
   font-size: 20px;
   font-size: 2rem;
   font-weight: 100; }
+.page-about .content {
+  margin: 10px auto 40px auto;
+  margin: 1rem auto 4rem auto;
+  max-width: 716px; }
 /* ==========================================================================
    3. Utilities - Reusable CSS modifiers
    ========================================================================== */
@@ -547,8 +551,8 @@ Post - CSS used to style individual posts
   position: relative;
   left: 0;
   top: 0;
-  margin: 40px auto 10px auto;
-  margin: 4rem auto 1rem auto;
+  margin: 0 auto 10px auto;
+  margin: 0 auto 1rem auto;
   width: 200px;
   height: 200px;
   border-radius: 100%;
