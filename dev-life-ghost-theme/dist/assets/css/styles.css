@@ -407,7 +407,9 @@ kbd {
   background-color: #fcfcfc;
   box-shadow: 10px 10px 30px -10px #333;
   transition: box-shadow .2s linear;
-  min-height: 350px; }
+  min-height: 350px;
+  font-size: 14px;
+  font-size: 1.4rem; }
 .post-card:hover {
   box-shadow: 2px 2px 30px -10px #333; }
 .post-card:hover a {
@@ -419,13 +421,13 @@ kbd {
   border-color: #ff8585;
   background-color: #ff8585; }
 .post-card .content {
-  padding-left: 5px;
-  padding-left: .5rem;
-  padding-right: 5px;
-  padding-right: .5rem; }
+  padding-left: 10px;
+  padding-left: 1rem;
+  padding-right: 10px;
+  padding-right: 1rem; }
 .post-card-title {
-  font-size: 33px;
-  font-size: 3.3rem;
+  font-size: 28px;
+  font-size: 2.8rem;
   letter-spacing: -1px;
   margin: 0; }
 .post-card-header {
@@ -458,8 +460,8 @@ kbd {
   background: #e6e6e6;
   transition: background-color .2s linear; }
 .post-card footer {
-  padding: 5px;
-  padding: .5rem; }
+  padding: 10px;
+  padding: 1rem; }
 /* ==========================================================================
 Post - CSS used to style individual posts
 ========================================================================== */
