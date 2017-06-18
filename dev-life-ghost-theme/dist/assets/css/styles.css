@@ -373,32 +373,41 @@ kbd {
   display: none; }
 .inner {
   position: relative;
-  width: 80%;
-  margin: 40px auto;
-  margin: 4rem auto;
+  width: 90%;
   margin: 0 auto;
-  max-width: 1110px; }
-@media (max-width: 500px) {
-  .inner {
-    width: 90%; } }
+  max-width: 1440px; }
+[class*='col-'] {
+  display: inline-block;
+  min-height: 1px;
+  width: 100%;
+  padding-left: 15px;
+  padding-left: 1.5rem;
+  padding-right: 15px;
+  padding-right: 1.5rem;
+  margin: 10px 0;
+  margin: 1rem 0;
+  vertical-align: top; }
+@media (min-width: 769px) {
+  .col-1 {
+    width: 49%; } }
+@media (min-width: 1045px) {
+  .col-1 {
+    width: 33%; }
+  .col-2 {
+    width: 66%; }
+  .col-3 {
+    width: 100%; } }
 /* ==========================================================================
   Loop - CSS used to style list of posts
   ========================================================================== */
-.posts-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
 .post-card {
   border-radius: 3px;
   overflow: hidden;
-  margin: 0 0 20px 20px;
-  margin: 0 0 2rem 2rem;
   width: 100%;
   background-color: #fcfcfc;
   box-shadow: 10px 10px 30px -10px #333;
-  transition: box-shadow .2s linear; }
+  transition: box-shadow .2s linear;
+  min-height: 350px; }
 .post-card:hover {
   box-shadow: 2px 2px 30px -10px #333; }
 .post-card:hover a {
@@ -451,18 +460,6 @@ kbd {
 .post-card footer {
   padding: 5px;
   padding: .5rem; }
-@media (max-width: 768px) {
-  .posts-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .post-card {
-    margin: 0 0 2rem 0; } }
-@media (min-width: 927px) {
-  .post-card {
-    width: 35rem;
-    margin: 0 0 2rem 2rem; } }
 /* ==========================================================================
 Post - CSS used to style individual posts
 ========================================================================== */

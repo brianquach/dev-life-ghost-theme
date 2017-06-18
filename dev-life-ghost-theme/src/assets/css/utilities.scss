@@ -18,14 +18,37 @@
 
 .inner {
     position: relative;
-    width: 80%;
-    margin: 4rem auto;
+    width: 90%;
     margin: 0 auto;
-    max-width: 1110px;
+    max-width: 1440px;
 }
 
-@media(max-width: 500px) {
-  .inner {
-    width: 90%;
+[class*='col-'] {
+  display: inline-block;
+  min-height: 1px;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: 1rem 0;
+  vertical-align: top;
+}
+
+@media (min-width: 769px) {
+  .col-1 {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1045px) {
+  .col-1 {
+    width: 33%;
+  }
+
+  .col-2 {
+    width: 66%
+  }
+
+  .col-3 {
+    width: 100%;
   }
 }

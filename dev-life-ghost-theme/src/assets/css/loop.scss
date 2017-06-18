@@ -2,20 +2,14 @@
   Loop - CSS used to style list of posts
   ========================================================================== */
 
-.posts-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .post-card {
   border-radius: 3px;
   overflow: hidden;
-  margin: 0 0 2rem 2rem;
-
   width: 100%;
   background-color: #fcfcfc;
   box-shadow: 10px 10px 30px -10px #333;
   transition: box-shadow .2s linear;
+  min-height: 350px;
 }
 
 .post-card:hover {
@@ -88,21 +82,4 @@
 
 .post-card footer {
   padding: .5rem;
-}
-
-@media(max-width: 768px) {
-  .posts-wrapper {
-    flex-direction: column;
-  }
-
-  .post-card {
-    margin: 0 0 2rem 0;
-  }
-}
-
-@media(min-width: 927px) {
-  .post-card {
-    width: 35rem;
-    margin: 0 0 2rem 2rem;
-  }
 }
