@@ -14,7 +14,7 @@ Post - CSS used to style individual posts
 
 .post-template .post-footer {
   position: relative;
-  margin: 6rem 0 0 0;
+  margin: 6rem 0 4rem 0;
   padding: 3rem 0 0 0;
   border-top: $border-color 1px solid;
 }
@@ -60,6 +60,7 @@ Post - CSS used to style individual posts
   padding: 6px;
   z-index: 2;
   box-shadow: $border-color 0 0 0 1px;
+  background-color: #ffffff;
 }
 
 .post-template .author {
@@ -80,7 +81,7 @@ Post - CSS used to style individual posts
     margin-left: 0;
   }
 
-  .author-image {
+  .post-template .author-image {
     top: -60px;
     left: 50%;
     margin-left: -40px;
