@@ -2,45 +2,121 @@
    Navigation - CSS for top level site navigation
    ========================================================================== */
 .site-nav {
-  overflow: hidden;
+  position: relative;
 }
 
-.site-nav ul {
+.site-nav .close {
+  display: none;
+}
+
+.menu {
   padding: 0;
   display: flex;
 }
 
-.site-nav li {
+.menu li {
   margin: .5rem;
   padding: 1rem 0;
 }
 
-.site-nav a {
+.menu a {
   padding: .5rem 1rem;
   text-decoration: none;
-  background-color: #ff8585;
+  background-color: $anchor-btn-passive-color;
   transition: background-color .2s, padding .2s;
   border-radius: 3px;
 }
 
-.site-nav a:hover {
+.menu a:hover {
   background-color: $anchor-btn-active-color;
   padding-top: .8rem;
   padding-bottom: .8rem;
 }
 
-.site-nav .site-nav-current {
-  border-color: #ff6a6a;
+.mobile-menu-btn {
+  display: none;
+  border: 2px solid $anchor-btn-active-color;
+  padding: 1rem;
+  background-color: transparent;
+  color: $anchor-btn-active-color;
+  font-weight: bold;
 }
 
-.site-nav .site-nav-current:after {
-  border: 1px solid black;
-  width: 100px;
-  height: 100px;
-}
 
 @media(max-width: 768px) {
-  .sive-nav {
-    padding: 0 1rem;
+  .menu-wrapper {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    margin: 3rem auto;
+  }
+
+  .menu-wrapper.mobile {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 15;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 0px #aaa;
+    transition: opacity .5s ease, visibility .5s ease;
+  }
+
+  .menu-wrapper.mobile .menu {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .menu-wrapper.mobile .close {
+    background: none;
+    border: none;
+    display: block;
+    margin: 1rem auto 0 auto;
+    padding: 1rem;
+    font-size: 2.5rem;
+  }
+
+  .menu-wrapper.mobile .menu li {
+    padding: 0;
+  }
+
+  .menu-wrapper.mobile .menu a {
+    display: block;
+    padding: 2rem 1rem;
+    margin: 0;
+    background-color: transparent;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0;
+    transition: none;
+  }
+
+  .menu-wrapper.mobile .close:hover,
+  .menu-wrapper.mobile .menu a:hover {
+    color: $anchor-btn-active-color;
+  }
+
+  .menu-wrapper.mobile .menu a:hover {
+    padding: 0;
+  }
+
+  .menu-wrapper.mobile + .overlay {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
   }
 }

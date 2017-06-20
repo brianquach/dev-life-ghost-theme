@@ -1,9 +1,14 @@
 <nav class="site-nav">
-  <ul>
-    {{#foreach navigation}}
-    <li class="site-nav-{{slug}}{{#if current}} site-nav-current{{/if}}">
-      <a href="{{url absolute="true"}}">{{label}}</a>
-    </li>
-    {{/foreach}}
-  </ul>
+  <div class="menu-wrapper">
+    <button class="close"><i class="icon-close"></i></button>
+    <ul class="menu">
+      {{#foreach navigation}}
+      <li class="site-nav-{{slug}}{{#if current}} site-nav-current{{/if}}">
+        <a href="{{url absolute="true"}}">{{label}}</a>
+      </li>
+      {{/foreach}}
+    </ul>
+  </div>
+  <div class="overlay"></div>
+  <button class="mobile-menu-btn">Menu</button>
 </nav>

@@ -71,10 +71,30 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 /**
  * Contains all javascript logic for Dev Life theme
  */
 
+var SiteFunctionality = function SiteFunctionality() {
+  _classCallCheck(this, SiteFunctionality);
+
+  var $toggleMobileMenuElements = $('.mobile-menu-btn, .overlay, .site-nav .close');
+  var $menuWrapper = $('.menu-wrapper');
+  var toggleMenu = function toggleMenu() {
+    $menuWrapper.toggleClass('mobile');
+  };
+
+  console.log($toggleMobileMenuElements);
+  $toggleMobileMenuElements.on('click', function (event) {
+    toggleMenu();
+  });
+};
+
+var siteFunctionality = new SiteFunctionality();
 
 /***/ }),
 /* 1 */
