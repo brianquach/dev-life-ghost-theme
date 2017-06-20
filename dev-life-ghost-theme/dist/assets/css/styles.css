@@ -410,8 +410,8 @@ kbd {
   box-shadow: 10px 10px 30px -10px #333;
   transition: box-shadow .2s linear;
   min-height: 350px;
-  font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 15px;
+  font-size: 1.5rem; }
 .post-card:hover {
   box-shadow: 2px 2px 30px -10px #333; }
 .post-card:hover a {
@@ -438,7 +438,10 @@ kbd {
 .post-card-title a {
   text-decoration: none; }
 .post-card-excerpt p {
-  margin: 0; }
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 10px 0;
+  margin: 1rem 0; }
 .post-card .read-more {
   text-align: center;
   width: 100px;
@@ -603,31 +606,27 @@ Post - CSS used to style individual posts
   overflow: hidden; }
 .site-nav ul {
   padding: 0;
-  margin: 10px 0 0 0;
-  margin: 1rem 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 .site-nav li {
   margin: 5px;
   margin: .5rem;
-  text-align: center;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 0 0 0;
-  transition: box-shadow .5s; }
+  padding: 10px 0;
+  padding: 1rem 0; }
 .site-nav a {
-  padding: 25px;
+  padding: 5px 10px;
+  padding: .5rem 1rem;
   text-decoration: none;
-  letter-spacing: 1px;
   background-color: #ff8585;
-  transition: background-color .5s; }
-.site-nav li:hover {
-  border-color: #ff8585;
-  box-shadow: 0 0 0 3px #ff6a6a; }
-.site-nav .site-nav-current,
+  transition: background-color .2s, padding .2s;
+  border-radius: 3px; }
 .site-nav a:hover {
-  background-color: #ff6a6a; }
+  background-color: #ff6a6a;
+  padding-top: 8px;
+  padding-top: .8rem;
+  padding-bottom: 8px;
+  padding-bottom: .8rem; }
 .site-nav .site-nav-current {
   border-color: #ff6a6a; }
 .site-nav .site-nav-current:after {

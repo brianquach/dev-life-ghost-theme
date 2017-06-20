@@ -7,35 +7,26 @@
 
 .site-nav ul {
   padding: 0;
-  margin: 1rem 0 0 0;
   display: flex;
 }
 
 .site-nav li {
   margin: .5rem;
-  text-align: center;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 0 0 0 ;
-  transition: box-shadow .5s;
+  padding: 1rem 0;
 }
 
 .site-nav a {
-  padding: 25px;
+  padding: .5rem 1rem;
   text-decoration: none;
-  letter-spacing: 1px;
   background-color: #ff8585;
-  transition: background-color .5s;
+  transition: background-color .2s, padding .2s;
+  border-radius: 3px;
 }
 
-.site-nav li:hover {
-  border-color: $anchor-btn-passive-color;
-  box-shadow: 0 0 0 3px #ff6a6a;
-}
-
-.site-nav .site-nav-current,
 .site-nav a:hover {
   background-color: $anchor-btn-active-color;
+  padding-top: .8rem;
+  padding-bottom: .8rem;
 }
 
 .site-nav .site-nav-current {
