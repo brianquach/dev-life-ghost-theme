@@ -5,6 +5,7 @@
 .page-intro-content {
   height: 250px;
   position: relative;
+  padding-top: 2rem;
 }
 
 .page-header {
@@ -20,14 +21,8 @@
   background: linear-gradient(45deg, #357adb 0%,#72ead2 49%,#ad5ab6 90%);
 }
 
-.page-title-wrapper h1 {
-  margin: 0;
-}
-
-@media(max-width: 768px) {
-  .page-title-wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
+@media(max-width: 768px  ) {
+  .page-header .page-title {
     text-align: center;
   }
 }

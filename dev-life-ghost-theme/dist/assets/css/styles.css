@@ -580,7 +580,9 @@ Post - CSS used to style individual posts
    ========================================================================== */
 .page-intro-content {
   height: 250px;
-  position: relative; }
+  position: relative;
+  padding-top: 20px;
+  padding-top: 2rem; }
 .page-header {
   position: relative; }
 .page-header-design {
@@ -592,12 +594,8 @@ Post - CSS used to style individual posts
   height: 100%;
   position: absolute;
   background: linear-gradient(45deg, #357adb 0%, #72ead2 49%, #ad5ab6 90%); }
-.page-title-wrapper h1 {
-  margin: 0; }
 @media (max-width: 768px) {
-  .page-title-wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .page-header .page-title {
     text-align: center; } }
 /* ==========================================================================
    Navigation - CSS for top level site navigation
