@@ -38,7 +38,7 @@
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
         {{{body}}}
 
-        <section class="site-social clearfix">
+        <section class="site-social clearfix" {{#if @blog.cover}}style="background-image: url({{@blog.cover}});"{{/if}}>
           {{> "socialmedia"}}
         </section>
 
