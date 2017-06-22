@@ -305,6 +305,7 @@ kbd {
   background: #f4f4f4;
   border-radius: 4px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, .2), 0 1px 0 0 #ffffff inset; }
+a,
 button:focus,
 input:focus {
   outline: none; }
@@ -588,6 +589,8 @@ Post - CSS used to style individual posts
   position: relative;
   padding-top: 20px;
   padding-top: 2rem; }
+.page-intro-content a {
+  text-decoration: none; }
 .page-header {
   position: relative; }
 .page-header-design {
@@ -790,3 +793,14 @@ Post - CSS used to style individual posts
   display: block;
   width: 45%;
   float: left; }
+/* ==========================================================================
+   Error - CSS for 404 and similar pages
+   ========================================================================== */
+.error-404 {
+  text-align: center; }
+.error-404 h1 {
+  font-size: 80px;
+  font-size: 8rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  letter-spacing: .2rem; }

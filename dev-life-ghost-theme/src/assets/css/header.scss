@@ -1,11 +1,18 @@
 /* ==========================================================================
    Header - CSS for default site header
    ========================================================================== */
-
 .page-intro-content {
   height: 250px;
   position: relative;
   padding-top: 2rem;
+}
+
+.page-intro-content a {
+  text-decoration: none;
+}
+
+.page-title {
+
 }
 
 .page-header {
