@@ -88,7 +88,6 @@ var SiteFunctionality = function SiteFunctionality() {
     $menuWrapper.toggleClass('mobile');
   };
 
-  console.log($toggleMobileMenuElements);
   $toggleMobileMenuElements.on('click', function (event) {
     toggleMenu();
   });

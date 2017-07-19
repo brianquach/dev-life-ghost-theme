@@ -9,8 +9,7 @@ class SiteFunctionality {
     const toggleMenu = () => {
       $menuWrapper.toggleClass('mobile');
     };
-
-    console.log($toggleMobileMenuElements);
+    
     $toggleMobileMenuElements.on('click', (event) => {
       toggleMenu();
     });
